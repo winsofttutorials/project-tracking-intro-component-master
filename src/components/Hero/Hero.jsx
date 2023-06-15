@@ -1,18 +1,22 @@
 import React, { Component } from "react";
 import logo from "../images/logo.svg";
 import "./Hero.css";
+// import OutsideClickHandler from "react-outside-click-handler";
 
 class Hero extends Component {
   state = { clicked: false };
+
   handleClicked = () => {
     this.setState({ clicked: !this.state.clicked });
   };
+
   render() {
     return (
       <div>
         <div className="navBar">
           <nav className="padding">
             <img src={logo} alt="logo" className="logo" />
+            {/* <OutsideClickHandler onOutsideClick={() => {}}> */}
             <div
               id="navLinks"
               className={this.state.clicked ? "#navLinks active" : "#navLinks"}
@@ -32,6 +36,7 @@ class Hero extends Component {
                 Login
               </a>
             </div>
+            {/* </OutsideClickHandler> */}
             <div className="menuIcon" onClick={this.handleClicked}>
               <i
                 className={this.state.clicked ? "fas fa-times" : "fas fa-bars"}

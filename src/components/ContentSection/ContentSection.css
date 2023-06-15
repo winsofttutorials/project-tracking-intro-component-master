@@ -1,0 +1,143 @@
+.c-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-container > div {
+  flex: 1;
+}
+
+.image-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10%;
+}
+
+.image-container img {
+  width: 140%;
+}
+
+.c-container .left-side {
+  padding: 0 0 0 10%;
+}
+
+.left-side > :nth-child(1) {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: var(--Dark-Grayish-Blue);
+  color: var(--white);
+  margin-top: 15%;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  margin-right: 20px;
+}
+
+.left-side > :nth-child(2) {
+  letter-spacing: 3px;
+  color: var(--Grayish-Blue);
+}
+
+.left-side > :nth-child(3) {
+  margin: 20px 0;
+  font-size: 72px;
+  max-width: 600px;
+  color: var(--Very-Dark-Grayish-Blue);
+  font-weight: 700;
+  line-height: 70px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.left-side > :nth-child(4) {
+  font-size: 25px;
+  max-width: 300px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.controls {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  color: var(--Grayish-Blue);
+}
+
+.controls > :nth-child(1) {
+  width: 200px;
+  height: 45px;
+  background-color: var(--Red);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  margin-right: 20px;
+}
+
+@media (max-width: 375px) {
+  .c-container {
+    flex-direction: column;
+  }
+
+  .c-container .right-side {
+    order: 1;
+  }
+
+  .c-container .left-side {
+    order: 2;
+    padding: 0 10%;
+  }
+
+  .left-side > :nth-child(1) {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: var(--Dark-Grayish-Blue);
+    color: var(--white);
+    margin-top: 24%;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .left-side > :nth-child(2) {
+    letter-spacing: 3px;
+    color: var(--Grayish-Blue);
+  }
+
+  .left-side > :nth-child(3) {
+    margin: 20px 0;
+    font-size: 32px;
+    max-width: 250px;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: 700;
+    line-height: 28px;
+    font-family: "Barlow Condensed", sans-serif;
+  }
+
+  .left-side > :nth-child(4) {
+    font-size: 25px;
+    max-width: 300px;
+    color: var(--Dark-Grayish-Blue);
+  }
+
+  .controls {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--Grayish-Blue);
+  }
+
+  .controls > :nth-child(1) {
+    width: 150px;
+    height: 45px;
+    background-color: var(--Red);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    margin-right: 20px;
+  }
+}
